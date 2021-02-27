@@ -1,0 +1,11 @@
+/* built by Elmir Lekovic */
+/* portfolio app css */
+
+/* Setting up variables to be used in the css */
+:root {
+    /* set color variables */
+    --white: #fff;
+    /* set corner radius to 25px  */
+    --border-radius: 25px;
+  }
+  
