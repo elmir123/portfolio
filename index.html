@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Porfolio</title>
 </head>
+
+<!-- replicate the menu and the sections of the sample in the readme file -->
+<!-- Challange to make the work articles descpription html code based not image -->
+<!-- To improve the sample page future code should have a fixed header -->
 <body>
     <!-- Header - Navigation, My Logo sections -->
     <header class="header">
@@ -30,13 +34,15 @@
     </header>
     <!-- End of header section -->
 
-    <!-- Main Start for sections and articles -->
+    <!-- Main container Start for sections and articles -->
     <main>
-        
+        <!-- About me section  -->
         <section id="about-me"> 
+            <!-- Heading of the section -->
             <div class="left-container"> 
                 <h2>About Me</h2>
             </div>
+            <!-- right container holds small bio -->
             <div class="right-container">
                 <p>
                 My name is Elmir Lekovic.
@@ -44,44 +50,54 @@
                 </p>
             </div>
         </section>
+        <!-- My work section to provide space for current and future articles -->
         <section id="my-work"> 
+            <!-- Heading of the section -->
             <div class="left-container"> 
                 <h2>My Work</h2>
             </div>
+            <!-- right container holds the app articles with links to deployed pages -->
             <div class="right-container services">
-               
-                    <article class="main-app">
-                        <a href="https://elmir123.github.io/cu-homework/" target="_blank">
-                            <img src="./assets/images/seo.jpg" alt="Main App - SEO Services Screenshot" >
-                        </a>
-                        <div class="app-desc">
-                            <h3>SEO Services</h3>
-                            <span>SEO Consulting Services</span>
-                        </div>  
-                    </article>
-               
-                    <article>
-                        <a href="#" target="_blank">
-                            <img src="./assets/images/wordpress.jpg" alt="Webmaster Services" >
-                        </a>
-                        <div class="app-desc">
-                            <h3>Webmaster Services</h3>
-                            <span>Hosting, Server Configuration</span>
-                        </div>
-                    </article>
+                <!-- main app class to target for full width and set the width to 100% -->
+                <article class="main-app">
+                    <!-- link to deployed app -->
+                    <a href="https://elmir123.github.io/cu-homework/" target="_blank">
+                        <!-- article image -->
+                        <img src="./assets/images/seo.jpg" alt="Main App - SEO Services Screenshot" >
+                    </a>
+                    <!-- article description -->
+                    <div class="app-desc">
+                        <!-- article description header -->
+                        <h3>SEO Services</h3>
+                        <span>SEO Consulting Services</span>
+                    </div>  
+                </article>
                 
-                    <article>
-                        <a href="#" target="_blank">
-                            <img src="./assets/images/accessiblity.jpeg" alt="Accessibility Service" >
-                        </a>
-                        <div class="app-desc">
-                            <h3>Accessibility Service</h3>
-                            <span>Let me make your website accessable</span>
-                        </div>
-                    </article>
+                <!-- WordPress services section  -->
+                <article>
+                    <a href="#" target="_blank">
+                        <img src="./assets/images/wordpress.jpg" alt="WordPress Services" >
+                    </a>
+                    <div class="app-desc">
+                        <h3>Webmaster Services</h3>
+                        <span>Hosting, Server Configuration</span>
+                    </div>
+                </article>
                 
+                <!-- Accessibility article -->
+                <article>
+                    <a href="#" target="_blank">
+                        <img src="./assets/images/accessiblity.jpeg" alt="Accessibility Service" >
+                    </a>
+                    <div class="app-desc">
+                        <h3>Accessibility Service</h3>
+                        <span>Let me make your website accessable</span>
+                    </div>
+                </article>
             </div>
         </section>
+        <!-- Contact Me section -->
+        <!-- Display as one column instead of across  -->
         <section id="contact-me"> 
             <div class="left-container"> 
                 <h2>Contact Me</h2>
@@ -101,11 +117,14 @@
             </div>
         </section>
     </main>
+    <!-- End of main container -->
+    
+    <!-- Footer start -->
     <footer class="footer">
-
         <p>
             &copy; 2021 Elmir Lekovic Services, Inc.
         </p>
     </footer>
+    <!-- End of footer container -->
 </body>
 </html>
