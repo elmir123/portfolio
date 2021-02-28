@@ -160,6 +160,9 @@ main section .right-container article img{
 .right-container article .app-desc h3{
     font-size: 20px;
 }
+.right-container article a:visited, .right-container article a:active, .right-container article a{
+    color: black;
+}
 /* non mobile device main section formating */
 @media screen and (min-width: 768px) {
     /* decreasing the flex width of leftcontainer changing the border side */
