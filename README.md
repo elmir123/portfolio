@@ -18,10 +18,13 @@ The "About Me" section contains brief bio about me. It contains some history abo
 
 "My Work" section:
 The "My Work" section is setup in such way that:
-Clicking on the image will take you to the application on github.
+- using article to section the apps
+- show first app large with 100% width and others wrapped at 50%
+- change the wrapping to 100% on all apps when on small screen
+- Clicking on the app image will take you to the application on GitHub.
 
 "Contact Me" section:
-You can find my contact inforamtion at the bottom of the page or use the navigation link "Contact Me" to view my contact information.
+You can find my contact information at the bottom of the page or use the navigation link "Contact Me" to view my contact information.
 
 The following image demonstrates the web application's appearance:
 ![Mobile first design of my portfolio page](./assets/images/portfolio-screenshot.png)
@@ -31,6 +34,6 @@ To Do After Javascript Lessons:
 - use fixed menu instead
 - highlight viewing section
 
-To view my porfolio website please use this link:
+To view my portfolio website please use this link:
 https://elmir123.github.io/portfolio/.
 
