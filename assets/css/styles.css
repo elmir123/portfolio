@@ -59,7 +59,7 @@ body{
     color: var(--app-color);
 }
 /* Header -- logo, navigation setup for non mobile devices */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
     /* set logo flex size and align to the left */
     .header img {
         width: 100px;
@@ -161,7 +161,7 @@ main section .right-container article img{
     font-size: 20px;
 }
 /* non mobile device main section formating */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
     /* decreasing the flex width of leftcontainer changing the border side */
     main section .left-container{
         flex: 1 0 20%;
