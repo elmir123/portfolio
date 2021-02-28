@@ -30,7 +30,7 @@ body{
 }
 /* Header Image sizing */
 .header img {
-    width: 100px;
+    width: 200px;
 }
 /* Centering header divs for logo and navigation on mobile device */
 .header div{
@@ -59,6 +59,9 @@ body{
 /* Header -- logo, navigation setup for non mobile devices */
 @media screen and (min-width: 760px) {
     /* set logo flex size and align to the left */
+    .header img {
+        width: 100px;
+    }
     .header .logo{
         text-align: left;
         flex: 1 0 30%
@@ -94,6 +97,7 @@ main section{
     display: flex;
     flex-wrap: wrap;
     margin: 30px 0 30px 0;
+    flex: 1 0 100%;
 }
 /* mobile first width and global font line hight */
 main section div{
@@ -108,10 +112,10 @@ main section .left-container{
 main section .left-container h2{
     font-size: 4rem;
     color: var(--app-color);
+    margin-right: 20px;
 }
 /* right containter specific CSS */
 main section .right-container{
-    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -120,6 +124,7 @@ main section .right-container article{
     position: relative;
     margin-top: 30px;
     margin-right: 20px;
+    flex: 1 0 100%;
 }
 
 main section .right-container article img{
@@ -151,17 +156,25 @@ main section .right-container article img{
     }
     main section .right-container{
         flex: 1 0 70%;
-        margin-left: 30px;
+        padding-left:20px
     }
-    main section .right-container article:not(:first-child){
+    main section .services article:not(:first-child){
         flex: 1 0 40%;   
     }
     main section .left-container{
         border-bottom: none;
         border-right: 10px solid var(--app-color);
+        
     }
     main section .left-container h2{
-        font-size: 4rem;
+        font-size: 3rem;
         color: var(--app-color);
+        text-align: right;
     } 
+}
+.footer {
+    padding: 30px;
+    clear: both;
+    text-align: center;
+    background-color: var(--lighter-dark);
 }
