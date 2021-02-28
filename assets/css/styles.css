@@ -1,11 +1,167 @@
 /* built by Elmir Lekovic */
 /* portfolio app css */
 
+/* This CSS is setup as mobile first */
+
 /* Setting up variables to be used in the css */
 :root {
     /* set color variables */
     --white: #fff;
+    --lighter-dark: rgb(199, 199, 199);
     /* set corner radius to 25px  */
     --border-radius: 25px;
+    --section-border-width: 2px;
+    --app-color:rgb(38, 147, 248);
   }
-  
+/* body background and global font family setup */
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--white);
+} 
+
+                                               /* Header CSS start */
+.header {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    color: #ffffff;
+    border-bottom: var(--section-border-width) solid var(--lighter-dark);
+}
+/* Header Image sizing */
+.header img {
+    width: 100px;
+}
+/* Centering header divs for logo and navigation on mobile device */
+.header div{
+    text-align: center;
+    flex: 1 0 100%;
+}
+/* Header Navigation padding and font size declearation */
+.navigation ul{
+    padding-top: 15px;
+    font-size: 20px;
+    list-style-type: none;  
+}
+/* setting top margin of the navigation items on mobile device */
+.navigation ul li {
+    margin: 0 0 15px 0;
+}
+/* removing any default and sudo decorations on the a tag  */
+.navigation ul li a, .navigation ul li a:active, .navigation ul li a:visited{
+    text-decoration: none;
+    color: gray;
+}
+/* setting the hover color for the navigation items */
+.navigation ul li a:hover{
+    color: var(--app-color);
+}
+/* Header -- logo, navigation setup for non mobile devices */
+@media screen and (min-width: 760px) {
+    /* set logo flex size and align to the left */
+    .header .logo{
+        text-align: left;
+        flex: 1 0 30%
+    }
+    /* set navigation flex size */
+    .header .navigation{
+        flex: 1 0 70%
+    }
+     /* set navigation - float and add margin to the right */
+    .navigation ul{
+        margin-right: 20px;
+        float: right;
+    }
+    /* display the links in the header inline and add margin to the left  */
+    .navigation ul li {
+        display: inline-block;
+        margin: 0 0 0 15px;
+    }
+  }
+
+                                                /* End of header CSS */
+
+                                           /* Start Main Section Formating */                                               
+
+/* setting mobile first css for the main tag and sections */
+main{
+    display: flex;
+    margin: 0 auto 0 auto;
+    flex-wrap: wrap;
+    width: 90%;
+}
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 30px 0;
+}
+/* mobile first width and global font line hight */
+main section div{
+    line-height: 1.5;
+}
+/* left container specific CSS */
+main section .left-container{
+    flex: 1 0 100%;
+    border-right:none;
+    border-bottom: var(--section-border-width) solid var(--lighter-dark);
+}
+main section .left-container h2{
+    font-size: 4rem;
+    color: var(--app-color);
+}
+/* right containter specific CSS */
+main section .right-container{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main section .right-container article{
+    position: relative;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+main section .right-container article img{
+    width: 100%;
+    transition: .5s ease;
+    border: var(--section-border-width) solid var(--lighter-dark);
+}
+.right-container article:hover img{
+    opacity: 0.3;
+}
+.right-container article .app-desc{
+    position: absolute;
+    bottom: 10%;
+    left:0px;
+    padding: 3%;
+    background-color: var(--lighter-dark);
+    border-top: var(--section-border-width) solid black;
+    border-right: var(--section-border-width) solid black;
+    border-bottom: var(--section-border-width) solid black;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+.right-container article .app-desc h3{
+    font-size: 20px;
+}
+@media screen and (min-width: 760px) {
+    main section .left-container{
+        flex: 1 0 20%;
+    }
+    main section .right-container{
+        flex: 1 0 70%;
+        margin-left: 30px;
+    }
+    main section .right-container article:not(:first-child){
+        flex: 1 0 40%;   
+    }
+    main section .left-container{
+        border-bottom: none;
+        border-right: 10px solid var(--app-color);
+    }
+    main section .left-container h2{
+        font-size: 4rem;
+        color: var(--app-color);
+    } 
+}
