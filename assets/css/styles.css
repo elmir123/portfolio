@@ -20,6 +20,8 @@ body{
 } 
 
                                                /* Header CSS start */
+
+/* formating the mobile header with flex, padding, flex wrap and bottom border */
 .header {
     display: flex;
     padding: 20px;
@@ -62,6 +64,7 @@ body{
     .header img {
         width: 100px;
     }
+    /* header logo on larger screens */
     .header .logo{
         text-align: left;
         flex: 1 0 30%
@@ -93,6 +96,7 @@ main{
     flex-wrap: wrap;
     width: 90%;
 }
+/* setting the flex display and flex wrap as well as centering the main section with 30px top and bottom margin */
 main section{
     display: flex;
     flex-wrap: wrap;
@@ -105,10 +109,11 @@ main section div{
 }
 /* left container specific CSS */
 main section .left-container{
-    flex: 1 0 100%;
+    flex: 1 0 90%;
     border-right:none;
     border-bottom: var(--section-border-width) solid var(--lighter-dark);
 }
+/* Section h2 title styling */
 main section .left-container h2{
     font-size: 4rem;
     color: var(--app-color);
@@ -120,6 +125,7 @@ main section .right-container{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+/* right side article tags formating margin-top margin right and the flex size*/
 main section .right-container article{
     position: relative;
     margin-top: 30px;
@@ -127,14 +133,17 @@ main section .right-container article{
     flex: 1 0 100%;
 }
 
+/* setting the article image transaction width and border */
 main section .right-container article img{
     width: 100%;
     transition: .5s ease;
     border: var(--section-border-width) solid var(--lighter-dark);
 }
+/* overlay animation on article hover the image transparancy changes */
 .right-container article:hover img{
     opacity: 0.3;
 }
+/* formating for the description div rounding corners and positioning to the bottom of the screen */
 .right-container article .app-desc{
     position: absolute;
     bottom: 10%;
@@ -147,34 +156,42 @@ main section .right-container article img{
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
 }
+/* formating the description heading */
 .right-container article .app-desc h3{
     font-size: 20px;
 }
+/* non mobile device main section formating */
 @media screen and (min-width: 760px) {
+    /* decreasing the flex width of leftcontainer changing the border side */
     main section .left-container{
         flex: 1 0 20%;
+        border-bottom: none;
+        border-right: 10px solid var(--app-color);
     }
+    /* deacresing the flex width of the right container */
     main section .right-container{
         flex: 1 0 70%;
         padding-left:20px
     }
+    /* making all other article except the first article in services container 40% flex width  */
     main section .services article:not(:first-child){
         flex: 1 0 40%;   
     }
-    main section .left-container{
-        border-bottom: none;
-        border-right: 10px solid var(--app-color);
-        
-    }
+    /* changing the size and aligment of the h2 in left container  */
     main section .left-container h2{
         font-size: 3rem;
-        color: var(--app-color);
         text-align: right;
     } 
 }
+                                           /* End Main Section Formating */                                               
+
+                                        /* Start Footer Section Formating */   
+                                                                                    
+/* formating the background color text aligment to center and padding   */
 .footer {
     padding: 30px;
-    clear: both;
     text-align: center;
     background-color: var(--lighter-dark);
 }
+                                           /* End Footer Section Formating */                                               
+
