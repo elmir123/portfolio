@@ -133,7 +133,7 @@ main section .right-container article{
     flex: 1 0 100%;
 }
 
-/* setting the article image transaction width and border */
+/* setting the article image: transition, width and border */
 main section .right-container article img{
     width: 100%;
     transition: .5s ease;
