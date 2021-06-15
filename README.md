@@ -29,10 +29,6 @@ You can find my contact information at the bottom of the page or use the navigat
 The following image demonstrates the web application's appearance:
 ![Mobile first design of my portfolio page](./assets/images/portfolio-screenshot.png)
 
-To Do After Javascript Lessons:
-- animate the scroll on the page
-- use fixed menu instead
-- highlight viewing section
 
 To view my portfolio website please use this link:
 https://elmir123.github.io/portfolio/.
